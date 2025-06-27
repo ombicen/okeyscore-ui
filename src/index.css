@@ -7,5 +7,11 @@
 
 body {
   font-family: 'Galindo', cursive, sans-serif;
+  background-image: url('./assets/funpattern.png');
+  background-blend-mode: multiply;
+  background-color: royalblue;
+  background-repeat: repeat;
+  background-size: 700px;
+  min-height: 100vh;
 }
 

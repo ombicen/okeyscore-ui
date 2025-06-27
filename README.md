@@ -1,69 +1,114 @@
-# React + TypeScript + Vite
+# OkeyScore UI Starter Kit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based UI component library starter kit designed for game interface development. This project provides a foundation for building consistent, accessible game user interfaces with a modern design system.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a **starter kit** - a basic foundation for game UI development. It's intentionally simple and not feature-complete, serving as a starting point for developers who want to build game interfaces with React and TypeScript.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Design System**: Consistent component styling with blue-based color scheme
+- **Core Components**: Button, Card, Modal, Alert with multiple variants
+- **TypeScript**: Full type safety and IntelliSense support
+- **Storybook**: Interactive component documentation and testing
+- **Tailwind CSS**: Utility-first styling approach
+- **Accessibility**: ARIA labels, keyboard navigation, and semantic HTML
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Components
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Button**: Multiple variants (default, primary, secondary, success, warning, danger) and sizes (small, medium, large)
+- **Card**: Container component with header, main, and footer sections
+- **Modal**: Overlay dialogs with backdrop and keyboard support
+- **Alert**: Notification components with dismissible functionality
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+3. **View Storybook documentation**:
+   ```bash
+   npm run storybook
+   ```
+
+## Development Status
+
+This is a **starter kit** and should be considered:
+- ✅ Functional foundation
+- ✅ Basic component set
+- ⚠️ Not production-ready
+- ⚠️ Limited feature set
+- ⚠️ Requires customization for specific use cases
+
+## Contributing
+
+We welcome contributions from the community! This project is designed to be a collaborative foundation for game UI development.
+
+### How to Contribute
+
+1. **Fork the repository**
+2. **Create a feature branch**: `git checkout -b feature/your-feature-name`
+3. **Make your changes** following the existing code style
+4. **Add tests** if applicable
+5. **Submit a pull request** with a clear description of your changes
+
+### Contribution Guidelines
+
+- **Keep it simple**: This is a starter kit, not a full-featured library
+- **Follow existing patterns**: Maintain consistency with current component structure
+- **Document your changes**: Update Storybook stories for new components
+- **Test thoroughly**: Ensure components work across different scenarios
+- **Be professional**: Write clear, maintainable code with proper comments
+
+### What We're Looking For
+
+- New UI components relevant to game interfaces
+- Improvements to existing components
+- Better accessibility features
+- Performance optimizations
+- Documentation improvements
+- Bug fixes and edge case handling
+
+## Project Structure
+
+```
+src/
+├── components/          # UI components
+│   ├── Button/         # Button component
+│   ├── Card/           # Card component
+│   ├── Modal/          # Modal component
+│   └── Alert/          # Alert component
+├── stories/            # Storybook stories
+└── assets/             # Images and static files
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Technology Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Storybook** - Component documentation
+- **Vite** - Build tool
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Support
+
+This is a community-driven starter kit. For questions or support:
+- Open an issue for bugs or feature requests
+- Check existing issues for similar problems
+- Contribute improvements through pull requests
+
+---
+
+**Note**: This starter kit is intentionally basic to serve as a foundation. Feel free to extend it based on your specific game UI needs!
