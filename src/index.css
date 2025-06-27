@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'Galindo', cursive, sans-serif;
+}
+
+body {
+  font-family: 'Galindo', cursive, sans-serif;
+}
+
