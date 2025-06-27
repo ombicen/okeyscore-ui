@@ -1,5 +1,7 @@
 # OkeyScore UI Starter Kit
 
+![OkeyScore UI Components](src/assets/image.png)
+
 A React-based UI component library starter kit designed for game interface development. This project provides a foundation for building consistent, accessible game user interfaces with a modern design system.
 
 ## Overview
